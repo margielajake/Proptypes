@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './Profile/Profile';
+import PropTypes from "prop-types";
 
-function App() {
+const handleName = name => alert(name);
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+   <div style = {{display:'flex', justifyContent:'center', alignItems: 'center', marginTop:'15px', padding: '10px'}}>
+     <Welcome fullName="Sara Campbell"  profession="Software Engineer" handleName={handleName}>
+
+     </Welcome>
+   </div>
+ );
+};
+
+
 
 export default App;
