@@ -25,17 +25,17 @@ const profileStyle = {
     );
    };
 
-  //  Welcome.propTypes = {
-  //   fullName: propTypes.string,
-  //   bio: propTypes.string,
-  //   profession: propTypes.string,
-  //   handleName: propTypes.func
-  //  }
+   Welcome.propTypes = {
+    fullName: propTypes.string,
+    bio: propTypes.string,
+    profession: propTypes.string,
+    handleName: propTypes.func
+   }
 
-  //  Welcome.defaultProps = {
-  //   fullName: "John Doe",
-  //   bio: 'Add bio here',
-  //   profession: 'Add Social Media'
-  //  }
+   Welcome.defaultProps = {
+    fullName: "John Doe",
+    bio: 'Add bio here',
+    profession: 'Add Social Media'
+   }
 
 export default Profile;
